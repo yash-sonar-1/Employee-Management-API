@@ -25,7 +25,7 @@ while True:
             elif(response.status_code==404):
                 print("Employee not found")
             else:
-                print(response.status_code,"Error occured")
+                print(response.status_code,"Error occurred")
 
 
         elif(choice==2):
@@ -38,12 +38,12 @@ while True:
             response=requests.post(base_url,json=employee)
             if(response.status_code==201):  
                 emp=response.json()
-                print("employee added succecfully")
+                print("employee added successfully")
                 print("id :",emp["id"])
                 print("Name :", emp["name"])
                 print("Salary :", emp["salary"])  
             else:
-                print(response.status_code,"error occured")
+                print(response.status_code,"error occurred")
 
 
         elif(choice==3):
@@ -61,7 +61,7 @@ while True:
             elif(response.status_code==404):
                 print("employee not found")
             else:
-                print(response.status_code,"error occured")
+                print(response.status_code,"error occurred")
 
         elif(choice==4):
             emp_id=int(input("enter employee id="))
@@ -72,7 +72,7 @@ while True:
             elif(response.status_code==404):
                 print("user  ot found")
             else:
-                print(response.status_code,"error occured")
+                print(response.status_code,"error occurred")
 
         elif(choice==5):
             break
